@@ -122,6 +122,46 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* ── slide-in animation for hero text ── */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply to each hero text element with staggered delays */
+.hero-content h1 {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.hero-content .tagline {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation-delay: 0.15s;
+}
+
+.hero-content .hero-description {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation-delay: 0.3s;
+}
+
+.hero-content .btn-primary {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation-delay: 0.45s;
+}
+
 .tagline {
   font-size: 1.3rem;
   font-weight: 500;
